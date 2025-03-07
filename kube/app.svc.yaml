@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: title
+spec:
+  selector:
+    app: title
+  ports:
+    - protocol: TCP
+      port: 9393
+      targetPort: 11777
+  type: NodePort
+  
